@@ -1,5 +1,7 @@
 require './app.rb'
 
+require './spec/features/web_helpers.rb'
+
 require 'rack/test'
 require 'rspec'
 require 'capybara/rspec'
