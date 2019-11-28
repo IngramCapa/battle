@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'player'
 
 class Battle < Sinatra::Base
 
@@ -29,5 +30,6 @@ class Battle < Sinatra::Base
 
 
     # start server if ruby file executed directly
+    # this lets you run the app.rb file without typing rackup before
     run! if app_file == $0
 end
