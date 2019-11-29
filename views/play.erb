@@ -1,6 +1,6 @@
-<h1><%= @player_1 %>  vs. <%= @player_2%></h1>
-<h2><%= @player_1%>'s HP: <%= @player_1_hp%>/<%=Player::DEFAULT_HIT_POINTS%></h2>
-<h2><%= @player_2%>'s HP: <%= @player_2_hp%>/<%=Player::DEFAULT_HIT_POINTS%></h2>
+<h1><%= @game.player_1.name%>  vs. <%= @game.player_2.name%></h1>
+<h2><%= @game.player_1.name%>'s HP: <%= @game.player_1.hp%>/<%=Player::DEFAULT_HIT_POINTS%></h2>
+<h2><%= @game.player_2.name%>'s HP: <%= @game.player_2.hp%>/<%=Player::DEFAULT_HIT_POINTS%></h2>
 <form action="/attack" method="get">
   <input type="submit" value="Attack!">
 </form>
