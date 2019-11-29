@@ -11,8 +11,7 @@ feature "attack" do
     click_on("Attack!")
     expect(page).to have_content("Raluca has attacked Harrison!")
     click_on("Next move")
-    expect(page).not_to have_content('Harrison hit points: 100/100')
-    expect(page).to have_content('Harrison hit points: 90/100')
-
-end
+    expect(page).not_to have_content("Harrison's HP: 100/100")
+    expect(page).to have_content("Harrison's HP: 90/100")
+  end
 end
