@@ -1,6 +1,8 @@
 <h1><%= @game.player_1.name%>  vs. <%= @game.player_2.name%></h1>
 <h2><%= @game.player_1.name%>'s HP: <%= @game.player_1.hp%>/<%=Player::DEFAULT_HIT_POINTS%></h2>
 <h2><%= @game.player_2.name%>'s HP: <%= @game.player_2.hp%>/<%=Player::DEFAULT_HIT_POINTS%></h2>
+<h3><%= @game.current_turn.name %>'s turn</h3>
+
 <form action="/attack" method="get">
   <input type="submit" value="Attack!">
 </form>
