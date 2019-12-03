@@ -1,4 +1,4 @@
-<h1><%= @game.player_1.name%> has attacked <%= @game.player_2.name%>!</h1>
+<h1><%= @game.current_turn.name%> has attacked <%= @game.switch_turns.name%>!</h1>
 
 <form action='/play'>
     <input type='submit' value='Next move'>

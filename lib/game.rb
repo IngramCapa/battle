@@ -1,6 +1,6 @@
 class Game
 
-  attr_reader :current_turn
+  attr_reader :current_turn, :opponent_of
   def initialize (player_1, player_2)
     @players = [player_1, player_2]
     @current_turn = player_1
@@ -16,6 +16,7 @@ class Game
     
   def attack(player)
     player.receives_damage
+    switch_turns
   end
 
   def switch_turns
