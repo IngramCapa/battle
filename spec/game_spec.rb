@@ -18,9 +18,10 @@ describe "Game" do
     end
     describe "attack" do
 
-        context "when player 1 attacks player 2" do
+        context "it damages the player" do
             it "should reduce player 2's hit points" do 
-            expect{ game.attack(player_2) }.to change { player_2.hp }.by(-10)
+            expect(player_2).to receive(:receives_damage)
+            game.attack(player_2)
             end 
         end
 
